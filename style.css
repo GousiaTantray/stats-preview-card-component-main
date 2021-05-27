@@ -40,6 +40,26 @@ p{
      
 }
 
+
+header img{
+    
+    width: 350px;   
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.4;  
+    
+    
+}
+
+header{
+    height: 259px;
+    background: var(--Soft-violet);
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
 .stat-info{
     padding: 1rem 2rem;
 }
@@ -58,55 +78,34 @@ p{
 
 .container{
     background-color: var(--Very-dark-blue);
-    width:374px;
+    width: 370px;
     height: 950px;
     margin: 0;
-    padding: 40px 20px;
-     
-    
-    
-}
-
-
-header img{
-    
-    width: 354px;   
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    opacity: 0.4;  
-    
-    
-}
-
-header{
-    height: 259px;
-    background: var(--Soft-violet);
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding: 40px 20px;   
 }
 
 .card{
+    
     background: var(--Dark-desaturated-blue);
-    width: 354px;
+    width: 350px;
     height: 868px;
     margin: auto;    
     border-radius: 10px;
     position: relative;
 }
 
-@media screen and (min-width : 375px){
+@media screen and (min-width : 1445px){
     
     .container{
      
-    width: 1438px;
+    width: 1336px;
     height: 795px;
-    margin: 10% auto;
+    margin: 100px auto;
     
 }
     .card{
      
-    width: 1276px ;
+    width: 1076px ;
     height: 624px;  
      }
     
@@ -129,6 +128,7 @@ header{
     }
     
     .main-content{
+        
         text-align: left;
         width: 550px;
         margin: 100px 80px;
@@ -148,15 +148,80 @@ header{
         
     }
     .stat-title{
+        
         display: inline-block;
         margin: 0 40px 10px;
         text-align: center;
     }    
 }
 
+
+@media screen and (min-width : 420px){
+    
+    .container{
+     
+    width: 1140px;
+    height: 795px;
+    margin: 100px auto;
+    
+}
+    .card{
+     
+    width: 1034px ;
+    height: 624px;  
+     }
+    
+    #img{
+        
+        width: 440px;
+        height: 624px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+    }
+    
+    header{
+        position: absolute;
+        right: 0;
+        width: 440px;
+        height : 624px; 
+        object-fit: cover;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+    }
+    
+    .main-content{
+        
+        text-align: left;
+        width: 450px;
+        margin: 80px;
+        padding: 40px 10px
+    }
+    p{
+        font-size: 1.4rem
+    }
+    
+    h1{
+        margin: 40px 0;
+    }
+    .stats{
+        width: 450px;
+    }
+    .stat-nums{
+        
+    }
+    .stat-title{
+        
+        display: inline-block;
+        margin: 0 30px 10px;
+        text-align: center;
+    }    
+}
+
+
+
+
 .attribution { 
-    width: 300px;
-    margin: 20px auto;
+     
     font-size: 12px; 
     text-align: center; 
 }
