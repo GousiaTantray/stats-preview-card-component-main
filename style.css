@@ -43,7 +43,8 @@ p{
 
 header img{
     
-    width: 350px;   
+    width: 100%;   
+    height: 259px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     opacity: 0.4;  
@@ -78,41 +79,106 @@ header{
 
 .container{
     background-color: var(--Very-dark-blue);
-    width: 370px;
-    height: 950px;
+    width: 100%;
+    height: 95%;
     margin: 0;
     padding: 40px 20px;   
 }
 
-.card{
-    
+.card{    
     background: var(--Dark-desaturated-blue);
-    width: 350px;
-    height: 868px;
-    margin: auto;    
+    width: 65%;
+    height: 80%;
+    margin: 10% auto;    
     border-radius: 10px;
     position: relative;
 }
 
-@media screen and (min-width : 1445px){
+@media screen and (min-width : 767px){
     
-    .container{
-     
-    width: 1336px;
-    height: 795px;
+    .container{     
+        width: 80%;
+        height: 90%;
+        margin: 10% auto;
+    }
+
+    .card{     
+        width: 85% ;
+        height: 70%;  
+     }
+    
+    #img{        
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+    }
+    
+    header{
+        position: absolute;
+        right: 0;
+        width: 40%;
+        height:100%;
+        object-fit: cover;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+    }
+    
+    .main-content{        
+        text-align: left;
+        width: 55%;
+        margin: 0.5rem;
+        padding: 10px 0px
+    }
+    p{
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    h1{
+        margin: 10px 0;
+    }
+
+    .stats{
+        width: 90%;
+    }
+
+    .stats h1{
+        padding-bottom: 0;
+    }
+    .stats p{
+        margin:0;
+    }
+    
+    .stat-title{
+        font-size: 0.3rem;
+        display: inline-block;
+        margin: 0 30px 10px;
+        padding-bottom: 0;
+        text-align: center;
+    }    
+}
+
+
+/**************rresponsive design*****/
+/* @media screen and (min-width : 1024px){
+    
+    .container{ 
+    width: 1436px;
+    height: 695px;
     margin: 100px auto;
     
 }
     .card{
      
     width: 1076px ;
-    height: 624px;  
+    height: 524px;  
      }
     
     #img{
         
-        width: 540px;
-        height: 624px;
+       // width: 100%;
+        height: 100%;
         border-bottom-right-radius: 10px;
         border-top-left-radius: 0;
     }
@@ -121,7 +187,7 @@ header{
         position: absolute;
         right: 0;
         width: 540px;
-        height : 624px; 
+        height : 524px; 
         object-fit: cover;
         border-bottom-right-radius: 10px;
         border-top-left-radius: 0;
@@ -144,9 +210,7 @@ header{
     .stats{
         width: 550px;
     }
-    .stat-nums{
-        
-    }
+    
     .stat-title{
         
         display: inline-block;
@@ -154,68 +218,9 @@ header{
         text-align: center;
     }    
 }
+ */
 
 
-@media screen and (min-width : 420px){
-    
-    .container{
-     
-    width: 1140px;
-    height: 795px;
-    margin: 100px auto;
-    
-}
-    .card{
-     
-    width: 1034px ;
-    height: 624px;  
-     }
-    
-    #img{
-        
-        width: 440px;
-        height: 624px;
-        border-bottom-right-radius: 10px;
-        border-top-left-radius: 0;
-    }
-    
-    header{
-        position: absolute;
-        right: 0;
-        width: 440px;
-        height : 624px; 
-        object-fit: cover;
-        border-bottom-right-radius: 10px;
-        border-top-left-radius: 0;
-    }
-    
-    .main-content{
-        
-        text-align: left;
-        width: 450px;
-        margin: 80px;
-        padding: 40px 10px
-    }
-    p{
-        font-size: 1.4rem
-    }
-    
-    h1{
-        margin: 40px 0;
-    }
-    .stats{
-        width: 450px;
-    }
-    .stat-nums{
-        
-    }
-    .stat-title{
-        
-        display: inline-block;
-        margin: 0 30px 10px;
-        text-align: center;
-    }    
-}
 
 
 
